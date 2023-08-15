@@ -18,8 +18,4 @@
 
 LOCAL_PATH := device/samsung/grandpplte
 
-# Dynamic Partitions
-PRODUCT_USE_DYNAMIC_PARTITIONS := true
-PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
-
 PRODUCT_PACKAGES += busybox
