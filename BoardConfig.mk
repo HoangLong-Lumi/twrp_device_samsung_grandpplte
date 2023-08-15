@@ -20,8 +20,6 @@ DEVICE_PATH := device/samsung/grandpplte
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
-LZMA_RAMDISK_TARGETS := recovery
-LZMA_COMPRESSION := -9
 
 # Architecture
 TARGET_ARCH := arm
@@ -82,6 +80,10 @@ TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
 BOARD_SUPPRESS_SECURE_ERASE := true
+
+# Ramdisk
+BOARD_RAMDISK_USE_LZMA := true
+LZMA_RAMDISK_TARGETS := recovery
 
 # TWRP
 TW_THEME := portrait_hdpi
