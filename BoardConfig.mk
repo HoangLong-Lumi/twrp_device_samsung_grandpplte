@@ -68,11 +68,7 @@ TARGET_KERNEL_ARCH        := arm
 TARGET_KERNEL_HEADER_ARCH := arm
 
 BOARD_MKBOOTIMG_ARGS += \
-	--kernel $(TARGET_PREBUILT_KERNEL) \
-	--cmdline "$(BOARD_KERNEL_CMDLINE)" \
 	--board $(TARGET_BOOTLOADER_BOARD_NAME) \
-	--base $(BOARD_KERNEL_BASE) \
-	--pagesize $(BOARD_KERNEL_PAGESIZE) \
 	--kernel_offset $(BOARD_KERNEL_OFFSET) \
 	--ramdisk_offset $(BOARD_RAMDISK_OFFSET) \
 	--second_offset $(BOARD_SECOND_OFFSET) \
